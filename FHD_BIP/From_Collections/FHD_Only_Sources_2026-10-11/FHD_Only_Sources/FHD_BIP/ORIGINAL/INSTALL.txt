@@ -1,0 +1,80 @@
+INSTRUCTIONS
+
+1. Download and install Python from the official website (https://www.python.org/downloads/) or install it from the PYTHON folder.
+   (Make sure to check the box "Add python.exe to PATH" during installation).
+
+2. Run START_FHD_BIP.bat.
+
+3. Generate your API key: https://aistudio.google.com/app/apikey (DO NOT SHARE IT WITH ANYONE!).
+
+4. In the BIP window, select the AI provider (Gemini), configure its profile, save the API key or token (not needed for LM Studio), and click "LAUNCH BIP" («ЗАПУСТИТЬ БИП»).
+
+5. Adjust the microphone sensitivity to filter out background noise and accidental sounds.
+
+6. Keep "Work only when game window is active" enabled. After launching BIP, switch to Space Rangers HD. In other windows, the microphone and assistant voice will automatically pause.
+
+7. The "BIP Voice Volume" slider controls only the assistant's volume from 0% to 100%. Changes apply immediately and are saved using the "SAVE SETTINGS" button.
+
+8. "Initiative" controls how often the assistant speaks autonomously:
+   - Low: rarely, roughly once every 4–6 minutes;
+   - Medium: roughly once every 1.5–2.5 minutes;
+   - High: roughly once every 50–90 seconds;
+   - Chatterbox: roughly once every 25–50 seconds.
+   These are check intervals, not guaranteed remarks: if nothing noteworthy happens in-game, BIP remains quiet.
+
+9. "Allow voice interruption of BIP" is disabled by default so background noises won't cut off speech. Enable this only if you want to talk over BIP. With interruption disabled, speak after the assistant finishes: the microphone will reactivate automatically.
+
+
+AI CONFIGURATION
+----------------
+
+1. Under "Configure Profile", select Gemini, GPT (OpenAI), GigaChat, YandexGPT, DeepSeek, Qwen, Cloud.ru, LM Studio, or any custom OpenAI-compatible API.
+2. For each active profile, fill in:
+   - exact model name;
+   - full endpoint URL up to /chat/completions;
+   - vision flag (enable only if the model genuinely supports vision/image input);
+   - API key or ready Bearer token (save with the "Save Key" button).
+3. Next, select your primary AI model and up to three fallbacks (prioritized from left to right).
+4. Keep automatic fallback on API error enabled.
+
+
+LM STUDIO (LOCAL SETUP)
+-----------------------
+
+1. Install LM Studio, download a model, and start the Local Server.
+2. The default endpoint is already prefilled:
+   http://localhost:1234/v1/chat/completions
+3. In the LM Studio profile, enter the exact ID of the loaded model.
+4. An API key is not required for a standard local LM Studio instance.
+5. Select "Local Model — LM Studio" as your primary model or as the final fallback.
+
+
+WINDOWS TTS VOICE
+-----------------
+
+For text-based providers, enable "Voice text AI via Windows voice" and select a "Windows TTS Voice". Only voices installed in Windows will appear in this list. The "Default" option uses your system default voice. The "Gemini Live Voice" setting applies exclusively to Gemini's native audio stream.
+
+
+GPT (OPENAI) VOICE
+------------------
+
+The "GPT (OpenAI)" profile uses dedicated OpenAI TTS. In the "GPT (OpenAI) Voice" field, you can choose: alloy, ash, ballad, coral, echo, fable, nova, onyx, sage, shimmer, verse, marin, or cedar.
+GPT requires a dedicated OpenAI platform API key; a ChatGPT Plus subscription alone does not provide API access.
+
+
+VOICE & FEATURE SUPPORT
+-----------------------
+
+- Gemini Live: microphone input, speech recognition, live screen capture stream, and native voice output.
+- GPT (OpenAI): text input, game event tracking, latest screen frame for Vision models, and voice output via selected OpenAI TTS voice.
+- Other providers: text input, game event tracking, latest screen frame for Vision models, and speech output via Windows system TTS.
+- Standalone STT (speech-to-text for player voice) is not yet available for other providers; the microphone is automatically disabled for them to avoid false expectations.
+
+Old self-built EXEs can be deleted: version 0.8.0 launches only FHD_BIP_v0.8.0.exe or current source code.
+
+Standalone mode works without FHD_Trade, FHD_Autopilot, or other mods. Route and trade commands require compatible game integrations (FHD_Autopilot / FHD_Trade) that read %LOCALAPPDATA%\FHD_BIP\bridge\commands.jsonl and return command_result.
+
+
+IMPORTANT
+---------
+The current stable build monitors the game via window capture and listens to the player via microphone. An unverified internal RScript/DLL bridge is intentionally omitted to prevent crashes in the 32-bit Space Rangers HD process.

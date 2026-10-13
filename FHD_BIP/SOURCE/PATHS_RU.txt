@@ -1,0 +1,27 @@
+FHD_BIP v0.8.0 game commands — КАНОНИЧЕСКИЕ ПУТИ
+========================================
+
+Корень мода:
+<ИГРА>\Mods\FHD_MODS\FHD_BIP\
+
+Описание мода:
+<ИГРА>\Mods\FHD_MODS\FHD_BIP\ModuleInfo.txt
+
+Запуск:
+<ИГРА>\Mods\FHD_MODS\FHD_BIP\START_FHD_BIP.bat
+
+Клиент:
+<ИГРА>\Mods\FHD_MODS\FHD_BIP\COMPANION\
+
+Пользовательские настройки и память:
+%LOCALAPPDATA%\FHD_BIP\
+
+Входящие события игры:
+%LOCALAPPDATA%\FHD_BIP\bridge\events.jsonl
+
+Исходящие команды BIP:
+%LOCALAPPDATA%\FHD_BIP\bridge\commands.jsonl
+
+В v0.8.0 отсутствуют релизные CFG, SCR и DLL игрового моста. Указывать пути к
+несуществующим файлам запрещено. Исходник DLL и контракт событий находятся
+только в архиве исходников и предназначены для дальнейшего тестирования ABI.
