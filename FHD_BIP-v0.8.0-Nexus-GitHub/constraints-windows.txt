@@ -1,0 +1,11 @@
+# Resolved for CPython 3.13, Windows amd64; original direct requirements are unchanged.
+altgraph==0.17.5
+cffi==2.1.1
+packaging==26.3
+pillow==12.0.0
+pycparser==3.12
+pyinstaller==6.22.3
+pyinstaller-hooks-contrib==2026.9
+setuptools==84.2.1
+sounddevice==0.5.2
+websockets==16.0

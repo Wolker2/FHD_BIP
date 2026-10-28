@@ -1,0 +1,36 @@
+Name=FHD_BIP
+Section=FHD_MODS
+Author=Prolog_D
+Dependence=
+Conflict=
+Priority=1
+Languages=Rus
+SmallDescription=Бортовой интеллектуальный помощник «БИП» (BIP)
+SmallDescription=<color=255,215,0>ver.0.8.0 Alpha</color>
+SmallDescription=(Мод можно <color=0,150,15>подключать</color>/<color=150,0,15>отключать</color> в любое время игры)
+FullDescription=Самостоятельный голосовой ИИ-компаньон для Space Rangers HD.
+FullDescription=Сам анализирует экран, читает сообщения, шутит и комментирует происходящее в выбранном характере.
+FullDescription=Запуск: Mods\FHD_MODS\FHD_BIP\START_FHD_BIP.bat
+FullDescription=Экран в повышенном разрешении, микрофон, голос Gemini Live и локальная память работают без других модов.
+FullDescription=Защита от случайного шума; работа микрофона и голоса только в активном окне игры.
+FullDescription=Характерный юмор: БИП время от времени шутит, подкалывает и саркастично комментирует реальные действия игрока в пределах выбранного характера.
+FullDescription=<color=0,150,15>НЕ РЕАЛИЗОВАНО:</color> 11 функций точных данных и 4 безопасные команды: карта, поиск системы, маршрут FHD_Autopilot, поиск товара и метка FHD_Trade.
+FullDescription=Перебивание голосом отключено по умолчанию и включается отдельной настройкой; добавлено окно диагностики.
+FullDescription=Gemini Live, OpenAI-compatible, DeepSeek, Qwen, GigaChat, YandexGPT, Cloud.ru и локальный LM Studio через настраиваемые профили.
+FullDescription=Три резервных ИИ и автоматическое переключение с сохранением характера, игрового контекста и недавнего разговора.
+SmallDescription=------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+FullDescription= ------------------------------------  <color=0,200,255>ENG</color>  ----------------------------------------
+Languages=Eng
+SmallDescription=Onboard Intelligent Assistant "BIP"
+SmallDescription=<color=255,215,0>ver.0.8.0 Alpha</color>
+SmallDescription=(The Mod can be <color=0,150,15>enabled</color>/<color=150,0,15>disabled</color> at any time during the game)
+FullDescription=Standalone voice AI companion for Space Rangers HD.
+FullDescription=Analyzes the screen on its own, reads messages, cracks jokes, and comments in line with the chosen persona.
+FullDescription=Launch: Mods\FHD_MODS\FHD_BIP\START_FHD_BIP.bat
+FullDescription=High-resolution screen capture, microphone input, Gemini Live voice, and local memory function without requiring additional mods.
+FullDescription=Noise filtering; microphone and voice output operate only when the game window is active.
+FullDescription=Signature humor: BIP periodically jokes, teases, and offers sarcastic commentary on the player's real actions based on the selected personality.
+FullDescription=<color=0,150,15>NOT IMPLEMENTED:</color> 11 telemetry functions and 4 safe commands: map, system search, FHD_Autopilot route, item search, and FHD_Trade marker.
+FullDescription=Voice interruption is disabled by default and can be toggled in settings; includes a diagnostics window.
+FullDescription=Gemini Live, OpenAI-compatible APIs, DeepSeek, Qwen, GigaChat, YandexGPT, Cloud.ru, and local LM Studio via customizable profiles.
+FullDescription=Three fallback AIs with automatic failover, retaining personality, game context, and recent conversation history.

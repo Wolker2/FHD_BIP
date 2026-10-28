@@ -1,0 +1,44 @@
+{
+  "input_archive": {
+    "name": "FHD_BIP.rar",
+    "size": 128830723,
+    "sha256": "c16cc98422922bb31c30da2f9e3be07dcf28f3a671b332c8e548b211e11f0718"
+  },
+  "original_file_count": 1434,
+  "retained_original_files": 54,
+  "excluded_file_count": 1380,
+  "excluded_categories": {
+    "bundled_virtual_environment_and_caches": {
+      "files": 1378,
+      "reason": "Third-party interpreter, packages, compiled extensions, caches and environment state; original requirements files are retained"
+    },
+    "python_installers": {
+      "files": [
+        {
+          "name": "PYTHON/python-3.13.15-macos11.pkg",
+          "size": 72078932
+        },
+        {
+          "name": "PYTHON/python-manager-26.3.msix",
+          "size": 47047851
+        }
+      ],
+      "reason": "External Python installation packages are not mod source; no installers are redistributed"
+    }
+  },
+  "metadata_source": {
+    "original": "ModuleInfo.txt",
+    "source": "SOURCE/ModuleInfo.txt",
+    "source_encoding": "utf-8",
+    "install_encoding": "cp1251"
+  },
+  "missing_game_bridge": {
+    "cfg": false,
+    "scr": false,
+    "dll": false,
+    "native_source_c_cpp_or_rson": false,
+    "note": "Original docs refer to a bridge source but no such source or compiled game bridge appears in the archive"
+  },
+  "original_application_sources_unchanged": true,
+  "windows_exe_built_in_this_session": false
+}
